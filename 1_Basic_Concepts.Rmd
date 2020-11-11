@@ -3,6 +3,14 @@ title: "1_chunks_and_packages"
 output: html_document
 ---
 
+## Guiding principles / recurring themes
+
+**"Keep the raw data raw"** — A hard line separating raw data and analyses. In R, we have data in one file and written computational commands saved as a separate file.
+
+**Think ahead for Future You, Future Us.** Help make lives easier — first and foremost your own. Create breadcrumbs for yourselves and others: document and share your work. 
+
+(https://github.com/rstudio-conf-2020/r-for-excel)[R for Excel user]
+
 This is a called a chunk. We have given it a name called _setup_.
 
 ```{r setup, include=FALSE}
