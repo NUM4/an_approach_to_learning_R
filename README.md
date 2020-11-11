@@ -1,10 +1,12 @@
 # Introduction to R workshop
 
-There is only we can cover in an hour. So, I will use this hour to convince you on the why and give you pathways to how.
+There is only so much we can cover in an hour. So, I will use this hour to convince you on the why and give you pathways to how.
 
 Before I get started:
 - Why do you want to learn R
 - Do you know version control
+
+For Excel users, the big shift is in the looking at the data versus writing code.
 
 I think R is an easier language to transition to - if you are starting with data analysis outside of spreadsheets.
 
