@@ -1,0 +1,69 @@
+---
+title: "2_variables_and_data_frames"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+For example, here is a simple variable (a way to store the data)
+
+```{r variable, }
+workshop_name = "Introduction to R workshop"
+workshop_name
+```
+
+We also have in-built data sets. These are useful for practice.
+```{r}
+cars
+```
+
+## %>%
+
+This is the weirdest symbol you are going to come across.
+
+It's called a pipe.
+
+It basically says take a thing(data) from left and past it to the right.
+
+For example, if I want to filter the `cars` dataset for `speed==4`
+
+```{r}
+cars %>% filter(speed==4)
+```
+# Congratulations, now you know how to filter a data set!
+
+You can filter on multiple columns.
+
+```{r}
+cars %>% filter(speed==4) %>% filter(dist==2)
+```
+
+
+```{r}
+cars %>% ggplot(aes(x = speed, y = dist))
+```
+
+```{r}
+cars %>% ggplot(aes(x = speed, y = dist)) + geom_point(alpha = 0.8, colour = "red", size = 4) 
+```
+
+Let's play with a bit bigger data set.
+
+```{r}
+library(gapminder)
+```
+
+```{r}
+gapminder
+```
+
+```{r}
+gapminder %>% 
+  ggplot(aes(x = year, y = lifeExp, group = country)) +
+  geom_line(colour = "gray") +
+  facet_wrap(~continent) +
+  theme_bw()
+```
+

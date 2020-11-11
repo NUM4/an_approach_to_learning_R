@@ -1,0 +1,38 @@
+---
+title: "1_chunks_and_packages"
+output: html_document
+---
+
+This is a called a chunk. We have given it a name called _setup_.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+We can press play to execute the code in the chunk.
+
+Pacakges in the context of R are like apps for your phone.
+Things that provide specific functionality.
+For example, below is a way to install a package for graphics called `ggplot`.
+
+```{r packages}
+#install.packages("ggplot")
+```
+
+You load a package into your current working enviroment -
+Each project has its own environment
+
+```{r loading_package}
+#library("ggplot")
+```
+
+In our short tutorial, we are going to follow series of packages - called Tidyverse.
+You can load all these packages together.
+
+```{r load_tidyverse, warning=FALSE}
+library(tidyverse)
+```
+
+
+
+
