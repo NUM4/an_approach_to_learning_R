@@ -7,13 +7,55 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Verbs
+```{r}
+library(gapminder)
+library(visdat)
+library(skimr)
+library(tidyverse)
+```
+
+## Summary
+
+```{r}
+summary(gapminder)
+```
+
+```{r}
+vis_dat(gapminder)
+```
+
+```{r}
+skim(gapminder)
+```
 
 ## Select
 
+```{r}
+gapminder %>% select(country, continent, year, pop)
+```
+
+
 ## Filter
+```{r}
+gapminder %>% select(country, continent, year, pop) %>% filter(country == "New Zealand")
+```
 
 ## Arrange
 
+```{r}
+gapminder %>%
+  select(country, continent, year, pop) %>% 
+  filter(country == "New Zealand") %>% 
+  arrange(-pop)
+
+```
 
 ## Summarise
+
+```{r}
+gapminder %>%
+  select(country, continent, year, pop) %>% 
+  group_by(continent,year) %>% 
+  summarise(pop = sum(pop))
+```
+
