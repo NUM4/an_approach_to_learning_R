@@ -32,10 +32,16 @@ Most of the knowledge regarding analysis lies within people’s heads, or archai
 R Markdown is nowadays used to write books, create websites, reports and build interactive dashboards.
 
 [R for Excel Users](https://rstudio-conf-2020.github.io/r-for-excel/)
+
 [Welcome | R for Data Science](https://r4ds.had.co.nz/)
+
 [Welcome | ggplot2](https://ggplot2-book.org/)
+
 [What They Forgot to Teach You About R](https://rstats.wtf/)
+
 [RStudio Education](https://education.rstudio.com/learn/)
+
 [STAT 545](https://stat545.com/)
+
 [Tidy Tuesday Screencasts](https://www.youtube.com/results?search_query=%23tidytuesday)
 
